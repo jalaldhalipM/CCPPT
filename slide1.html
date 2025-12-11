@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>WeLe Career Compass</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Solid color overlay instead of gradient to avoid export issues */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 18, 0.85);
+        }
+
+        .brand-green {
+            color: #00bf53;
+        }
+
+        .bg-brand-green {
+            background-color: #00bf53;
+        }
+
+        .border-brand-green {
+            border-color: #00bf53;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container">
+        <!-- Background Image: Inspiring Group of Students -->
+        <img alt="Students Success" class="bg-image" src="assets/indian_students_slide1.png" />
+        <!-- Dark Overlay for Readability -->
+        <div class="overlay"></div>
+        <!-- Main Content Wrapper -->
+        <div class="relative z-10 w-full h-full flex flex-col justify-center px-24">
+            <!-- Top Left Logo Area -->
+            <div class="absolute top-12 left-12 flex items-center space-x-3">
+                <div class="w-10 h-10 bg-brand-green rounded flex items-center justify-center text-white shadow-lg">
+                    <i class="fa-solid fa-compass text-xl"></i>
+                </div>
+                <span class="text-white text-2xl font-bold tracking-wide">WeLe</span>
+            </div>
+            <!-- Title and Tagline -->
+            <div class="max-w-5xl mt-12">
+                <!-- Eyebrow Text -->
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="h-1 w-20 bg-brand-green"></div>
+                    <p class="text-brand-green font-bold tracking-widest uppercase text-lg">AI-Driven Career Guidance
+                    </p>
+                </div>
+                <!-- Main Title -->
+                <h1 class="text-white text-7xl font-extrabold leading-tight mb-8 drop-shadow-lg">
+                    WeLe <span class="brand-green">Career Compass</span>
+                </h1>
+                <!-- Subtitle / Tagline -->
+                <div class="flex">
+                    <div class="w-2 bg-brand-green rounded-full mr-6"></div>
+                    <p class="text-gray-100 text-3xl font-light leading-snug max-w-3xl">
+                        The Career Compass that brings clarity to every student’s future.
+                    </p>
+                </div>
+            </div>
+            <!-- Bottom visual elements -->
+            <div class="absolute bottom-12 right-12 flex items-center space-x-4 opacity-80">
+                <div class="text-right">
+                    <p class="text-white text-sm font-light">Powered by</p>
+                    <p class="text-brand-green font-bold text-lg">Advanced AI Assessment</p>
+                </div>
+                <i class="fa-solid fa-microchip text-4xl text-white"></i>
+            </div>
+            <!-- Abstract Background Icon -->
+            <div class="absolute top-1/2 right-24 transform -translate-y-1/2 opacity-10">
+                <i class="fa-solid fa-location-arrow text-white" style="font-size: 400px;"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

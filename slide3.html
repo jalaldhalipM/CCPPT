@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Consequences of Wrong Choices</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .brand-green {
+            color: #00bf53;
+        }
+
+        .bg-brand-green {
+            background-color: #00bf53;
+        }
+
+        .border-brand-green {
+            border-color: #00bf53;
+        }
+
+        .card {
+            background-color: #262626;
+            border-left: 4px solid transparent;
+        }
+
+        .card-active {
+            border-left-color: #00bf53;
+            background-color: #2a2a2a;
+        }
+
+        .icon-box {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background-color: rgba(0, 191, 83, 0.1);
+            color: #00bf53;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container text-white">
+        <!-- Left Panel: Context and Title -->
+        <div class="w-5/12 h-full bg-gray-900 relative flex flex-col justify-center px-12 z-20 shadow-2xl">
+            <!-- Decorative accent line -->
+            <div class="absolute top-0 left-0 w-2 h-full bg-brand-green"></div>
+            <!-- Header Icon -->
+            <div class="flex items-center space-x-3 mb-8">
+                <div
+                    class="w-8 h-8 bg-gray-800 rounded flex items-center justify-center text-brand-green text-sm shadow-md border border-gray-700">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <p class="text-gray-400 font-bold tracking-widest uppercase text-xs">The Risks</p>
+            </div>
+            <!-- Title -->
+            <h2 class="text-5xl font-extrabold leading-tight mb-8 text-white">
+                Consequences of <br /><span class="text-brand-green">Wrong Choices</span>
+            </h2>
+            <!-- Descriptive Text -->
+            <div class="space-y-6">
+                <p class="text-gray-300 text-lg leading-relaxed font-light">
+                    When students take a path that doesn’t match their natural strengths, the impact goes beyond just
+                    grades.
+                </p>
+                <p class="text-gray-400 text-base leading-relaxed border-l-2 border-gray-700 pl-4 italic">
+                    "They struggle to stay motivated, their academic results drop, and they find it difficult to enter a
+                    career where they can succeed."
+                </p>
+            </div>
+            <!-- Background Abstract Icon -->
+            <div class="absolute bottom-[-50px] left-[-50px] opacity-5 pointer-events-none">
+                <i class="fa-solid fa-circle-xmark text-[300px] text-white"></i>
+            </div>
+        </div>
+        <!-- Right Panel: List of Consequences -->
+        <div class="w-7/12 h-full relative bg-black flex flex-col justify-center px-16 py-12">
+            <!-- Background Image Texture -->
+            <img alt="Texture Background"
+                class="absolute top-0 left-0 w-full h-full object-cover opacity-20 filter grayscale blur-sm"
+                src="https://page.gensparksite.com/slides_images/f916b154d6934ff9abd1410cd169a5c7.webp" />
+            <!-- Content Grid -->
+            <div class="relative z-10 grid grid-cols-1 gap-5">
+                <!-- Item 1: Motivation -->
+                <div
+                    class="card card-active p-5 rounded-lg flex items-start space-x-5 shadow-lg transform transition-transform hover:scale-[1.01]">
+                    <div class="icon-box flex-shrink-0">
+                        <i class="fa-solid fa-battery-quarter text-2xl"></i>
+                    </div>
+                    <div class="pt-1">
+                        <h3 class="text-xl font-bold text-white mb-1">Loss of Motivation</h3>
+                        <p class="text-gray-400 text-sm leading-snug">Students struggle to find interest in subjects,
+                            leading to burnout, disengagement, and lack of drive.</p>
+                    </div>
+                </div>
+                <!-- Item 2: Performance -->
+                <div
+                    class="card p-5 rounded-lg flex items-start space-x-5 shadow-lg transform transition-transform hover:scale-[1.01]">
+                    <div class="icon-box flex-shrink-0">
+                        <i class="fa-solid fa-arrow-trend-down text-2xl"></i>
+                    </div>
+                    <div class="pt-1">
+                        <h3 class="text-xl font-bold text-white mb-1">Low Performance</h3>
+                        <p class="text-gray-400 text-sm leading-snug">Academic results suffer as students force
+                            themselves to learn concepts that don't align with their natural aptitude.</p>
+                    </div>
+                </div>
+                <!-- Item 3: Confidence -->
+                <div
+                    class="card p-5 rounded-lg flex items-start space-x-5 shadow-lg transform transition-transform hover:scale-[1.01]">
+                    <div class="icon-box flex-shrink-0">
+                        <i class="fa-solid fa-heart-crack text-2xl"></i>
+                    </div>
+                    <div class="pt-1">
+                        <h3 class="text-xl font-bold text-white mb-1">Shattered Confidence</h3>
+                        <p class="text-gray-400 text-sm leading-snug">Repeated struggles create self-doubt and anxiety,
+                            impacting overall personal growth and mental well-being.</p>
+                    </div>
+                </div>
+                <!-- Item 4: Future Career -->
+                <div
+                    class="card p-5 rounded-lg flex items-start space-x-5 shadow-lg transform transition-transform hover:scale-[1.01]">
+                    <div class="icon-box flex-shrink-0">
+                        <i class="fa-solid fa-user-lock text-2xl"></i>
+                    </div>
+                    <div class="pt-1">
+                        <h3 class="text-xl font-bold text-white mb-1">Career Stagnation</h3>
+                        <p class="text-gray-400 text-sm leading-snug">Graduates find it difficult to enter the workforce
+                            or succeed in roles they never truly enjoyed or understood.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

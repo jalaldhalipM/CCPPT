@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Learning Path &amp; Journey</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f1712;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .brand-green {
+            color: #00bf53;
+        }
+
+        .bg-brand-green {
+            background-color: #00bf53;
+        }
+
+        .border-brand-green {
+            border-color: #00bf53;
+        }
+
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* Roadmap Styling */
+        .roadmap-line {
+            position: absolute;
+            left: 2rem;
+            top: 2rem;
+            bottom: 2rem;
+            width: 2px;
+            background-color: #374151;
+            z-index: 0;
+        }
+
+        .glass-panel {
+            background-color: rgba(17, 24, 39, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            /* Fallback/Subtle blur */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container text-white">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <img alt="Learning Path Background" class="w-full h-full object-cover opacity-20"
+                src="https://page.gensparksite.com/slides_images/a87687b65560c15bd4775cd6634ef19a.webp" />
+            <div class="absolute inset-0 bg-gray-900 opacity-90"></div>
+        </div>
+        <!-- Main Content -->
+        <div class="relative z-10 w-full h-full flex px-16 py-10">
+            <!-- Left Side: Header & Context (40%) -->
+            <div class="w-5/12 flex flex-col justify-center pr-12">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div
+                        class="px-3 py-1 bg-brand-green text-white text-xs font-bold uppercase tracking-widest rounded shadow-lg">
+                        The Journey
+                    </div>
+                    <div class="h-px w-20 bg-gray-600"></div>
+                </div>
+                <h1 class="text-5xl font-extrabold leading-tight mb-6 font-space tracking-tight">
+                    Learning Path <br />
+                    <span class="text-green-400">&amp; Journey</span>
+                </h1>
+                <p class="text-lg text-gray-300 leading-relaxed font-light mb-8">
+                    Each recommended track comes with a personalized learning path. Students follow structured modules,
+                    real-world practice, industry simulations, and continuous skill-building activities designed for
+                    their strengths.
+                </p>
+                <!-- Stat/Info Box -->
+                <div class="glass-panel rounded-xl p-6 mt-4 border-l-4 border-brand-green">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-gray-800 p-3 rounded-lg">
+                            <i class="fa-solid fa-bullseye text-brand-green text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-bold text-lg mb-1">Outcome Focused</h3>
+                            <p class="text-gray-400 text-sm">Every module is designed to build specific competencies
+                                required by top employers in the tech industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side: Vertical Roadmap (60%) -->
+            <div class="w-7/12 relative pl-8 py-2">
+                <!-- Vertical Line -->
+                <div class="roadmap-line">
+                    <!-- Progress fill simulated with solid color div -->
+                    <div class="absolute top-0 left-0 w-full bg-brand-green h-3/4 opacity-60"></div>
+                </div>
+                <div class="flex flex-col h-full justify-between relative z-10 space-y-3">
+                    <!-- Step 1 -->
+                    <div class="flex items-center group">
+                        <div
+                            class="w-16 h-16 flex-shrink-0 bg-gray-800 border-2 border-brand-green rounded-full flex items-center justify-center shadow-lg shadow-green-900/20 z-10">
+                            <i class="fa-solid fa-clipboard-list text-brand-green text-xl"></i>
+                        </div>
+                        <div
+                            class="ml-6 glass-panel p-3 rounded-lg w-full transform group-hover:translate-x-2 transition-transform border-l-2 border-l-brand-green">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="text-white font-bold font-space text-lg">Assessment &amp; Baseline</h3>
+                                <span class="text-xs text-brand-green font-mono tracking-wider">STEP 01</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Identifying current skill levels, learning style, and
+                                aptitudes.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex items-center group">
+                        <div
+                            class="w-16 h-16 flex-shrink-0 bg-gray-800 border-2 border-brand-green rounded-full flex items-center justify-center shadow-lg shadow-green-900/20 z-10">
+                            <i class="fa-solid fa-cubes-stacked text-brand-green text-xl"></i>
+                        </div>
+                        <div
+                            class="ml-6 glass-panel p-3 rounded-lg w-full transform group-hover:translate-x-2 transition-transform border-l-2 border-l-brand-green">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="text-white font-bold font-space text-lg">Structured Modules</h3>
+                                <span class="text-xs text-brand-green font-mono tracking-wider">STEP 02</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Mastering core theoretical concepts and foundational logic.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex items-center group">
+                        <div
+                            class="w-16 h-16 flex-shrink-0 bg-gray-800 border-2 border-brand-green rounded-full flex items-center justify-center shadow-lg shadow-green-900/20 z-10">
+                            <i class="fa-solid fa-laptop-code text-brand-green text-xl"></i>
+                        </div>
+                        <div
+                            class="ml-6 glass-panel p-3 rounded-lg w-full transform group-hover:translate-x-2 transition-transform border-l-2 border-l-brand-green">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="text-white font-bold font-space text-lg">Applied Practice</h3>
+                                <span class="text-xs text-brand-green font-mono tracking-wider">STEP 03</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Hands-on coding challenges and continuous mini-projects.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex items-center group">
+                        <div
+                            class="w-16 h-16 flex-shrink-0 bg-gray-800 border-2 border-brand-green rounded-full flex items-center justify-center shadow-lg shadow-green-900/20 z-10">
+                            <i class="fa-solid fa-city text-brand-green text-xl"></i>
+                        </div>
+                        <div
+                            class="ml-6 glass-panel p-3 rounded-lg w-full transform group-hover:translate-x-2 transition-transform border-l-2 border-l-brand-green">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="text-white font-bold font-space text-lg">Industry Simulation</h3>
+                                <span class="text-xs text-brand-green font-mono tracking-wider">STEP 04</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Real-world scenarios solving complex business problems.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="flex items-center group">
+                        <div
+                            class="w-16 h-16 flex-shrink-0 bg-brand-green rounded-full flex items-center justify-center shadow-lg shadow-green-500/50 z-10">
+                            <i class="fa-solid fa-rocket text-white text-2xl"></i>
+                        </div>
+                        <div
+                            class="ml-6 bg-gray-800 border border-brand-green p-3 rounded-lg w-full transform group-hover:translate-x-2 transition-transform relative overflow-hidden">
+                            <div class="absolute inset-0 bg-brand-green opacity-10"></div>
+                            <div class="flex justify-between items-center mb-1 relative z-10">
+                                <h3 class="text-white font-bold font-space text-lg">Job Ready</h3>
+                                <span
+                                    class="text-xs text-white bg-brand-green px-2 py-0.5 rounded font-mono font-bold">GOAL</span>
+                            </div>
+                            <p class="text-gray-300 text-sm relative z-10">Portfolio building, certification, and career
+                                placement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>WeLe Career Compass - Final Message</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f1712;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-green {
+            color: #00bf53;
+        }
+
+        .bg-brand-green {
+            background-color: #00bf53;
+        }
+
+        .border-brand-green {
+            border-color: #00bf53;
+        }
+
+        /* Glass effect */
+        .glass-panel {
+            background: rgba(15, 23, 18, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Text gradient */
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #00bf53);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Abstract glowing orb */
+        .glow-orb {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 191, 83, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container text-white">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img alt="Students Looking Forward" class="w-full h-full object-cover opacity-40"
+                src="https://page.gensparksite.com/slides_images/645b124bbe337924dfdb45bc6511abee.webp" />
+            <div class="absolute inset-0 bg-gray-900 opacity-80 mix-blend-multiply"></div>
+            <!-- Vignette effect via CSS shadow instead of gradient -->
+            <div class="absolute inset-0 shadow-[inset_0_0_150px_rgba(0,0,0,0.9)]"></div>
+        </div>
+        <!-- Glowing Background Orbs -->
+        <div class="glow-orb top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+        <!-- Main Content Wrapper -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-20 text-center">
+            <!-- Icon/Logo Mark -->
+            <div
+                class="mb-8 p-4 bg-gray-800 bg-opacity-50 rounded-full border border-gray-700 shadow-2xl backdrop-filter backdrop-blur-sm">
+                <div
+                    class="w-16 h-16 rounded-full bg-brand-green flex items-center justify-center shadow-[0_0_20px_rgba(0,191,83,0.5)]">
+                    <i class="fa-solid fa-compass text-3xl text-white"></i>
+                </div>
+            </div>
+            <!-- Main Headline -->
+            <h1 class="text-6xl font-extrabold mb-8 font-space-grotesk tracking-tight leading-tight max-w-5xl">
+                Build the Future You <br />
+                <span class="text-transparent bg-clip-text bg-green-500" style="-webkit-text-fill-color: #00bf53;">Dream
+                    Of</span>
+            </h1>
+            <!-- Body Text / Quote -->
+            <div class="max-w-4xl relative">
+                <!-- Decorative Quotes -->
+                <i class="fa-solid fa-quote-left absolute -top-6 -left-12 text-4xl text-gray-700 opacity-50"></i>
+                <p class="text-2xl text-gray-200 leading-relaxed font-light">
+                    When students understand themselves, they make better decisions. <br />
+                    <strong class="text-white font-semibold">WeLe Career Compass</strong> gives them the clarity,
+                    direction, and confidence they need to succeed.
+                </p>
+                <i class="fa-solid fa-quote-right absolute -bottom-6 -right-12 text-4xl text-gray-700 opacity-50"></i>
+            </div>
+            <!-- Call to Action / Next Steps -->
+            <div class="mt-16 flex flex-col items-center">
+                <p class="text-gray-400 text-sm tracking-widest uppercase mb-4 font-semibold">Start Your Journey Today
+                </p>
+                <div
+                    class="glass-panel px-10 py-4 rounded-xl flex items-center gap-6 shadow-2xl transform hover:scale-105 transition-transform duration-300 cursor-pointer group">
+                    <span
+                        class="text-xl font-bold font-space-grotesk tracking-wide group-hover:text-brand-green transition-colors">wele.ai/compass</span>
+                    <div
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-brand-green transition-colors duration-300">
+                        <i
+                            class="fa-solid fa-arrow-right text-brand-green group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Brand Bar -->
+            <div
+                class="absolute bottom-8 w-full flex justify-between items-center px-12 border-t border-gray-800 pt-6 opacity-60">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-brand-green"></i>
+                    <span class="font-space-grotesk font-bold tracking-wider text-sm">WeLe Career Compass</span>
+                </div>
+                <div class="text-xs text-gray-400 font-poppins">
+                    © 2025 WeLe Education Technology. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Geometric Elements -->
+        <div class="absolute top-20 right-20 w-32 h-32 border border-gray-700 rounded-full opacity-20"></div>
+        <div
+            class="absolute bottom-32 left-32 w-20 h-20 border border-brand-green rounded-full opacity-10 border-dashed">
+        </div>
+        <div class="absolute top-1/2 right-10 w-2 h-32 bg-gray-800 rounded-full opacity-30"></div>
+        <div class="absolute bottom-20 left-10 w-2 h-16 bg-brand-green rounded-full opacity-30"></div>
+    </div>
+</body>
+
+</html>

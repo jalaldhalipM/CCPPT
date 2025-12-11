@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>The Outcome for Students</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f1712;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .brand-green {
+            color: #00bf53;
+        }
+
+        .bg-brand-green {
+            background-color: #00bf53;
+        }
+
+        .border-brand-green {
+            border-color: #00bf53;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(0, 191, 83, 0.4);
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .icon-circle {
+            background: rgba(0, 191, 83, 0.15);
+            border: 1px solid rgba(0, 191, 83, 0.3);
+            box-shadow: 0 0 15px rgba(0, 191, 83, 0.2);
+        }
+
+        /* Number counter style */
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -0.05em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container text-white">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0 bg-gray-900">
+            <img alt="Student Success" class="w-full h-full object-cover opacity-20"
+                src="https://www.genspark.ai/image_placeholder.png" />
+            <div class="absolute inset-0 bg-gray-900 opacity-90"></div>
+        </div>
+        <!-- Decorative Glows (No Gradients) -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-black opacity-40 z-0"></div>
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-brand-green z-20 shadow-[0_0_20px_rgba(0,191,83,0.8)]"></div>
+        <!-- Main Content -->
+        <div class="relative z-10 w-full h-full flex px-16 py-12">
+            <!-- Left Column: Text & Intro -->
+            <div class="w-5/12 flex flex-col justify-center pr-12">
+                <div class="flex items-center space-x-3 mb-8">
+                    <div class="w-2 h-8 bg-brand-green rounded-sm shadow-[0_0_10px_rgba(0,191,83,0.5)]"></div>
+                    <span class="text-brand-green font-bold tracking-widest uppercase text-sm">Real Impact</span>
+                </div>
+                <h1 class="text-5xl font-extrabold leading-tight mb-6 font-space-grotesk">
+                    The Outcome <br />
+                    <span class="text-white">for Students</span>
+                </h1>
+                <p class="text-lg text-gray-300 leading-relaxed mb-8 border-l-2 border-gray-700 pl-6">
+                    With the Career Compass, students finally gain clarity. They choose the right domain with
+                    confidence, study based on their strengths, and build skills aligned with industry needs.
+                </p>
+                <!-- Success Indicator -->
+                <div
+                    class="bg-gray-800 bg-opacity-50 p-6 rounded-xl border border-gray-700 flex items-center space-x-4 max-w-sm">
+                    <div
+                        class="w-12 h-12 rounded-full bg-green-900 flex items-center justify-center border border-green-700">
+                        <i class="fa-solid fa-check text-brand-green text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-400 uppercase font-semibold">Goal Achievement</p>
+                        <p class="text-white font-bold text-lg">Job-Ready Faster</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column: KPI Cards Grid -->
+            <div class="w-7/12 flex items-center">
+                <div class="grid grid-cols-2 gap-6 w-full">
+                    <!-- Card 1: Clarity -->
+                    <div
+                        class="glass-card p-8 rounded-2xl flex flex-col justify-between h-64 group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fa-solid fa-compass text-6xl text-white"></i>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-bullseye text-2xl text-brand-green"></i>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-2xl font-bold font-space-grotesk mb-2 text-white group-hover:text-brand-green transition-colors">
+                                Domain Clarity</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Eliminate confusion by choosing a path
+                                backed by data and natural aptitude.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2: Confidence -->
+                    <div
+                        class="glass-card p-8 rounded-2xl flex flex-col justify-between h-64 group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fa-solid fa-shield-halved text-6xl text-white"></i>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-user-graduate text-2xl text-brand-green"></i>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-2xl font-bold font-space-grotesk mb-2 text-white group-hover:text-brand-green transition-colors">
+                                Confidence</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Study with purpose knowing your career
+                                track matches your true strengths.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3: Skills Alignment -->
+                    <div
+                        class="glass-card p-8 rounded-2xl flex flex-col justify-between h-64 group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fa-solid fa-cubes text-6xl text-white"></i>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-puzzle-piece text-2xl text-brand-green"></i>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-2xl font-bold font-space-grotesk mb-2 text-white group-hover:text-brand-green transition-colors">
+                                Industry Fit</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Build relevant skills that are directly
+                                aligned with current market demands.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4: Future Ready -->
+                    <div
+                        class="glass-card p-8 rounded-2xl flex flex-col justify-between h-64 group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fa-solid fa-rocket text-6xl text-white"></i>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-chart-line text-2xl text-brand-green"></i>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-2xl font-bold font-space-grotesk mb-2 text-white group-hover:text-brand-green transition-colors">
+                                Accelerated Growth</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Reduce learning time and become job-ready
+                                faster with a focused roadmap.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

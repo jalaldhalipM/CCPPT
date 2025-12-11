@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Track 7: Project &amp; Product Leadership</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f1712;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .brand-green {
+            color: #00bf53;
+        }
+
+        .bg-brand-green {
+            background-color: #00bf53;
+        }
+
+        .border-brand-green {
+            border-color: #00bf53;
+        }
+
+        /* Custom Bullet Styling */
+        .tech-bullet {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .tech-bullet::before {
+            content: "\f058";
+            /* fa-circle-check */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: #00bf53;
+            font-size: 1.25rem;
+        }
+
+        .glass-overlay {
+            background: rgba(15, 23, 18, 0.85);
+            backdrop-filter: blur(8px);
+        }
+
+        .tech-tag {
+            background: rgba(0, 191, 83, 0.1);
+            border: 1px solid rgba(0, 191, 83, 0.3);
+            color: #4ade80;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-family: 'Space Grotesk', monospace;
+            letter-spacing: 0.05em;
+        }
+
+        /* Custom scrollbar for the kanban simulation */
+        .kanban-col::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        .kanban-col::-webkit-scrollbar-thumb {
+            background: #374151;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container text-white">
+        <!-- Background Image Full Height -->
+        <div class="absolute inset-0 z-0">
+            <img alt="Project Leadership Team Collaboration" class="w-full h-full object-cover opacity-60"
+                src="https://www.genspark.ai/image_placeholder.png" />
+            <div class="absolute inset-0 bg-gray-900 opacity-80 mix-blend-multiply"></div>
+        </div>
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-gray-900 to-transparent z-0 opacity-90">
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-900 to-transparent z-0"></div>
+        <!-- Main Content Container -->
+        <div class="relative z-10 w-full h-full flex items-center px-16">
+            <!-- Left Side: Content Box -->
+            <div class="w-7/12 h-full flex flex-col justify-center pr-12">
+                <!-- Header Tag -->
+                <div class="flex items-center space-x-3 mb-6">
+                    <div
+                        class="px-3 py-1 bg-brand-green text-white text-xs font-bold uppercase tracking-widest rounded shadow-lg shadow-green-900/50">
+                        Track 07
+                    </div>
+                    <div class="h-px w-20 bg-gray-500"></div>
+                </div>
+                <!-- Title -->
+                <h1 class="text-5xl font-extrabold leading-tight mb-6 font-space-grotesk tracking-tight">
+                    Project, Program &amp; <br />
+                    <span class="text-transparent bg-clip-text bg-green-400"
+                        style="-webkit-text-fill-color: #4ade80;">Product Leadership</span>
+                </h1>
+                <!-- Description -->
+                <p class="text-xl text-gray-300 leading-relaxed font-light mb-10 max-w-2xl">
+                    For students with strong communication, organisation, and decision-making skills. Learn to lead
+                    teams, manage complex projects, and drive product vision from concept to launch.
+                </p>
+                <!-- Key Learning Points (Bullets) -->
+                <div class="space-y-6">
+                    <div class="tech-bullet">
+                        <h3 class="text-xl font-bold text-white mb-1">Strategic Leadership</h3>
+                        <p class="text-gray-400 text-sm">Define vision, set goals, and guide cross-functional teams
+                            toward success.</p>
+                    </div>
+                    <div class="tech-bullet">
+                        <h3 class="text-xl font-bold text-white mb-1">Agile Management</h3>
+                        <p class="text-gray-400 text-sm">Master frameworks like Scrum and Kanban to deliver value faster
+                            and efficiently.</p>
+                    </div>
+                    <div class="tech-bullet">
+                        <h3 class="text-xl font-bold text-white mb-1">Product Vision</h3>
+                        <p class="text-gray-400 text-sm">Transform user needs into actionable roadmaps and successful
+                            market products.</p>
+                    </div>
+                </div>
+                <!-- Tech Stack / Skills Tags -->
+                <div class="flex flex-wrap gap-3 mt-10">
+                    <span class="tech-tag">Agile &amp; Scrum</span>
+                    <span class="tech-tag">JIRA / Asana</span>
+                    <span class="tech-tag">Product Roadmap</span>
+                    <span class="tech-tag">Stakeholder Mgmt</span>
+                    <span class="tech-tag">User Stories</span>
+                    <span class="tech-tag">KPI Analysis</span>
+                </div>
+            </div>
+            <!-- Right Side: Visual Focus -->
+            <div class="w-5/12 h-full flex items-center justify-center relative">
+                <!-- Floating Card Effect -->
+                <div class="relative w-full max-w-md aspect-square">
+                    <!-- Background Glow -->
+                    <div class="absolute inset-0 bg-brand-green filter blur-[80px] opacity-20 rounded-full animate-pulse"
+                        style="animation-duration: 4s;"></div>
+                    <!-- Card Container -->
+                    <div
+                        class="glass-overlay rounded-2xl border border-gray-700 p-2 shadow-2xl relative overflow-hidden transform rotate-2 hover:rotate-0 transition-transform duration-500 ease-out">
+                        <div class="bg-gray-900 rounded-xl overflow-hidden relative h-full flex flex-col">
+                            <!-- Header: Simulation of a Project Tool -->
+                            <div class="p-4 border-b border-gray-800 flex justify-between items-center bg-gray-850">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-bars-progress text-brand-green"></i>
+                                    <span class="text-xs text-white font-bold tracking-wide">SPRINT BOARD</span>
+                                </div>
+                                <div class="flex space-x-1">
+                                    <div class="w-2 h-2 rounded-full bg-gray-600"></div>
+                                    <div class="w-2 h-2 rounded-full bg-gray-600"></div>
+                                </div>
+                            </div>
+                            <!-- Board Content -->
+                            <div class="p-4 flex-1 flex space-x-3 overflow-hidden">
+                                <!-- Column 1: To Do -->
+                                <div class="flex-1 bg-gray-800 bg-opacity-50 rounded-lg p-2 flex flex-col gap-2">
+                                    <div class="text-[10px] text-gray-400 font-bold uppercase mb-1">To Do</div>
+                                    <div class="bg-gray-700 p-2 rounded border-l-2 border-red-400 shadow-sm">
+                                        <div class="h-1.5 w-12 bg-gray-500 rounded mb-1"></div>
+                                        <div class="h-1 w-full bg-gray-600 rounded"></div>
+                                    </div>
+                                    <div class="bg-gray-700 p-2 rounded border-l-2 border-red-400 shadow-sm opacity-70">
+                                        <div class="h-1.5 w-16 bg-gray-500 rounded mb-1"></div>
+                                        <div class="h-1 w-10/12 bg-gray-600 rounded"></div>
+                                    </div>
+                                </div>
+                                <!-- Column 2: In Progress -->
+                                <div class="flex-1 bg-gray-800 bg-opacity-50 rounded-lg p-2 flex flex-col gap-2">
+                                    <div class="text-[10px] text-gray-400 font-bold uppercase mb-1">In Progress</div>
+                                    <div class="bg-gray-700 p-2 rounded border-l-2 border-yellow-400 shadow-sm">
+                                        <div class="h-1.5 w-14 bg-gray-500 rounded mb-1"></div>
+                                        <div class="h-1 w-full bg-gray-600 rounded mb-2"></div>
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex -space-x-1">
+                                                <div class="w-3 h-3 rounded-full bg-blue-400 border border-gray-700">
+                                                </div>
+                                                <div class="w-3 h-3 rounded-full bg-purple-400 border border-gray-700">
+                                                </div>
+                                            </div>
+                                            <i class="fa-solid fa-paperclip text-[8px] text-gray-500"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Column 3: Done -->
+                                <div class="flex-1 bg-gray-800 bg-opacity-50 rounded-lg p-2 flex flex-col gap-2">
+                                    <div class="text-[10px] text-gray-400 font-bold uppercase mb-1">Done</div>
+                                    <div class="bg-gray-700 p-2 rounded border-l-2 border-green-500 shadow-sm">
+                                        <div class="flex justify-between items-start mb-1">
+                                            <div class="h-1.5 w-10 bg-gray-500 rounded"></div>
+                                            <i class="fa-solid fa-check text-[8px] text-green-500"></i>
+                                        </div>
+                                        <div class="h-1 w-full bg-gray-600 rounded"></div>
+                                    </div>
+                                    <div class="bg-gray-700 p-2 rounded border-l-2 border-green-500 shadow-sm">
+                                        <div class="flex justify-between items-start mb-1">
+                                            <div class="h-1.5 w-12 bg-gray-500 rounded"></div>
+                                            <i class="fa-solid fa-check text-[8px] text-green-500"></i>
+                                        </div>
+                                        <div class="h-1 w-11/12 bg-gray-600 rounded"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bottom Stats -->
+                            <div
+                                class="px-4 py-3 bg-gray-850 border-t border-gray-800 flex justify-between items-center">
+                                <div class="flex items-center space-x-2">
+                                    <div class="text-[10px] text-gray-400">Velocity</div>
+                                    <div class="text-xs font-bold text-brand-green">+24%</div>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-16 bg-gray-700 rounded-full h-1">
+                                        <div class="bg-brand-green h-1 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative Icon Badge -->
+                    <div
+                        class="absolute -bottom-6 -left-6 w-24 h-24 bg-gray-800 rounded-xl border border-gray-700 shadow-xl flex items-center justify-center transform -rotate-6 group hover:rotate-0 transition-all">
+                        <i class="fa-solid fa-clipboard-check text-4xl text-brand-green"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

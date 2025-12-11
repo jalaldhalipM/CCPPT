@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>The Problem: Why Students Struggle</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            background-color: #111827;
+        }
+
+        .text-brand-green {
+            color: #00bf53;
+        }
+
+        .bg-brand-green {
+            background-color: #00bf53;
+        }
+
+        .border-brand-green {
+            border-color: #00bf53;
+        }
+
+        .quote-mark {
+            font-family: serif;
+            font-size: 10rem;
+            line-height: 1;
+            opacity: 0.1;
+            color: #00bf53;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container">
+        <!-- Left Content Section -->
+        <div class="w-5/12 h-full flex flex-col justify-center px-12 relative z-10 bg-gray-900 text-white">
+            <!-- Decorative Quote Mark -->
+            <div class="relative">
+                <div class="quote-mark">“</div>
+                <!-- Tagline -->
+                <div class="flex items-center space-x-3 mb-4 relative z-10">
+                    <div class="h-0.5 w-10 bg-brand-green"></div>
+                    <p class="text-brand-green font-bold tracking-widest uppercase text-sm">The Problem</p>
+                </div>
+                <!-- Main Heading -->
+                <h1 class="text-4xl font-extrabold mb-8 leading-tight relative z-10">
+                    Why Students <br /><span class="text-brand-green">Struggle</span>
+                </h1>
+                <!-- Content Body -->
+                <div class="relative z-10 border-l-4 border-brand-green pl-6 py-2">
+                    <p class="text-xl font-light leading-relaxed text-gray-200 mb-6">
+                        Every year, thousands of students choose their stream not because they truly want it, but
+                        because of <span class="font-bold text-white">family pressure</span>, <span
+                            class="font-bold text-white">peer influence</span>, or simply <span
+                            class="font-bold text-white">lack of information</span>.
+                    </p>
+                    <p class="text-xl font-light leading-relaxed text-gray-200">
+                        Many end up studying subjects they don’t enjoy, leading to <span
+                            class="text-brand-green font-bold">low performance</span>, <span
+                            class="text-brand-green font-bold">confusion</span>, and <span
+                            class="text-brand-green font-bold">frustration</span>.
+                    </p>
+                </div>
+            </div>
+            <!-- Bottom Indicator -->
+            <div class="absolute bottom-12 left-12 flex items-center opacity-50">
+                <i class="fa-solid fa-triangle-exclamation text-brand-green mr-3 text-xl"></i>
+                <p class="text-sm font-light">Critical Career Gap</p>
+            </div>
+        </div>
+        <!-- Right Image Section -->
+        <div class="w-7/12 h-full relative">
+            <!-- Image Source: Confused Student Context -->
+            <img alt="Confused student dealing with pressure"
+                class="w-full h-full object-cover filter brightness-75 contrast-125"
+                src="https://page.gensparksite.com/slides_images/28fc7fe874a118a694fc7a66d93eaf9d.svg" />
+            <!-- Color Tint Overlay -->
+            <div class="absolute inset-0 bg-brand-green opacity-20 mix-blend-overlay"></div>
+            <!-- Text Overlay on Image -->
+            <div class="absolute bottom-12 right-12 text-right">
+                <div
+                    class="inline-block bg-black bg-opacity-70 p-4 rounded-lg backdrop-filter backdrop-blur-sm border-r-4 border-brand-green">
+                    <p class="text-white font-bold text-2xl">70%</p>
+                    <p class="text-gray-300 text-sm">Students regret their initial choices</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

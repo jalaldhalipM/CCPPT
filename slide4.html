@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>WeLe Career Compass - Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f1712;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .brand-text {
+            color: #00bf53;
+        }
+
+        .bg-brand {
+            background-color: #00bf53;
+        }
+
+        .border-brand {
+            border-color: #00bf53;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 50px rgba(0, 191, 83, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container">
+        <!-- Abstract Background Elements -->
+        <div
+            class="absolute top-0 right-0 w-2/3 h-full bg-gray-900 opacity-30 transform -skew-x-12 translate-x-1/4 z-0">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-600 to-transparent opacity-50">
+        </div>
+        <!-- Decorative Circle -->
+        <div
+            class="absolute -top-20 right-1/4 w-96 h-96 bg-green-500 rounded-full mix-blend-overlay filter blur-3xl opacity-10">
+        </div>
+        <!-- Main Content Wrapper -->
+        <div class="relative z-10 w-full h-full flex items-center px-16">
+            <!-- Left Column: Text Content -->
+            <div class="w-5/12 pr-6 flex flex-col justify-center h-full">
+                <!-- Eyebrow -->
+                <div class="flex items-center space-x-3 mb-6 animate-fade-in-up">
+                    <div class="h-0.5 w-12 bg-brand"></div>
+                    <span class="text-green-500 font-bold tracking-widest uppercase text-sm">The Solution</span>
+                </div>
+                <!-- Title -->
+                <h1 class="text-5xl font-extrabold text-white leading-tight mb-6">
+                    Introducing <br />
+                    <span class="brand-text">WeLe Career Compass</span>
+                </h1>
+                <!-- Main Description -->
+                <div class="glass-panel p-6 rounded-xl border-l-4 border-brand mb-8">
+                    <p class="text-gray-200 text-lg leading-relaxed font-light">
+                        WeLe Career Compass changes this narrative. It is an <strong
+                            class="text-white font-semibold">AI-driven career discovery framework</strong> that helps
+                        students understand who they are, what they’re naturally good at, and which technology domain
+                        aligns with their abilities and interests.
+                    </p>
+                </div>
+                <!-- Key Features List -->
+                <div class="flex space-x-8">
+                    <div class="flex items-center group">
+                        <div
+                            class="w-10 h-10 rounded-full bg-green-900 bg-opacity-40 flex items-center justify-center text-green-400 mr-3 border border-green-800 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">AI Analysis</p>
+                            <p class="text-gray-500 text-xs">Deep learning patterns</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center group">
+                        <div
+                            class="w-10 h-10 rounded-full bg-green-900 bg-opacity-40 flex items-center justify-center text-green-400 mr-3 border border-green-800 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Precision</p>
+                            <p class="text-gray-500 text-xs">Accurate matching</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column: Visual Mockup -->
+            <div class="w-7/12 h-full flex items-center justify-center relative pl-10">
+                <!-- Mockup Container -->
+                <div
+                    class="relative w-full max-w-2xl transform hover:scale-105 transition-transform duration-700 ease-out">
+                    <!-- Glow behind image -->
+                    <div
+                        class="absolute inset-0 bg-green-500 filter blur-3xl opacity-20 rounded-full transform scale-75">
+                    </div>
+                    <!-- Image Card -->
+                    <div
+                        class="relative bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-700 glow-effect">
+                        <!-- Browser Header Simulation -->
+                        <div class="bg-gray-900 px-4 py-3 flex items-center space-x-2 border-b border-gray-700">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            <div class="ml-4 bg-gray-800 rounded px-3 py-1 text-xs text-gray-500 font-mono w-1/2">
+                                wele-compass.ai/dashboard</div>
+                        </div>
+                        <!-- Main Dashboard Image -->
+                        <div class="relative aspect-video overflow-hidden">
+                            <img alt="WeLe Career Compass Dashboard Interface"
+                                class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity"
+                                src="assets/dashboard_slide4.png" />
+                            <!-- Overlay Gradient for better integration -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-40">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-xl flex items-center space-x-3 animate-bounce"
+                        style="animation-duration: 3s;">
+                        <div class="bg-green-100 p-2 rounded-full text-green-600">
+                            <i class="fa-solid fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-800 font-bold text-sm">Match Found!</p>
+                            <p class="text-gray-500 text-xs">AI Confidence: 98%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Number -->
+        <div class="absolute bottom-6 right-6 text-gray-600 text-sm font-light">
+            04
+        </div>
+    </div>
+</body>
+
+</html>

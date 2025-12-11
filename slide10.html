@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Career Track Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f1712;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-green {
+            color: #00bf53;
+        }
+
+        .bg-brand-green {
+            background-color: #00bf53;
+        }
+
+        .border-brand-green {
+            border-color: #00bf53;
+        }
+
+        /* Glass Card Effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #00bf53;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.06);
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
+            border-color: rgba(0, 191, 83, 0.3);
+        }
+
+        .glass-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .track-icon {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: rgba(0, 191, 83, 0.1);
+            color: #00bf53;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover .track-icon {
+            background-color: #00bf53;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Flex Layout for Cards */
+        .track-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .track-card {
+            width: calc(25% - 15px);
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container px-12 py-10 bg-gray-900 text-white relative">
+        <!-- Background Ambient Glow -->
+        <div
+            class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-green-600 rounded-full mix-blend-screen filter blur-[120px] opacity-10 pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-blue-900 rounded-full mix-blend-screen filter blur-[100px] opacity-10 pointer-events-none">
+        </div>
+        <!-- Header Section -->
+        <div class="mb-6 text-center max-w-4xl mx-auto relative z-10">
+            <div class="flex items-center justify-center space-x-3 mb-2 animate-fade-in">
+                <span class="w-8 h-0.5 bg-brand-green opacity-70"></span>
+                <p class="brand-green font-bold tracking-[0.2em] uppercase text-xs">Future-Ready Domains</p>
+                <span class="w-8 h-0.5 bg-brand-green opacity-70"></span>
+            </div>
+            <h1 class="text-4xl font-extrabold mb-3 text-white tracking-tight">Career Track Overview</h1>
+            <p class="text-gray-400 text-base font-light leading-relaxed max-w-3xl mx-auto">
+                Based on student strengths, WeLe recommends <span class="text-white font-medium">high-growth technology
+                    tracks</span> that align with industry demands and individual capabilities.
+            </p>
+        </div>
+        <!-- Cards Container -->
+        <div class="track-container relative z-10">
+            <!-- Row 1 (4 items) -->
+            <!-- Track 1 -->
+            <div class="glass-card track-card group">
+                <div class="track-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 leading-tight group-hover:text-brand-green transition-colors">AI, ML
+                    &amp; Data Science</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Logic, pattern recognition, data analysis,
+                    and building intelligent systems.</p>
+            </div>
+            <!-- Track 2 -->
+            <div class="glass-card track-card group">
+                <div class="track-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 leading-tight group-hover:text-brand-green transition-colors">Emerging
+                    AI &amp; Multimodal</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Generative AI, multimodal intelligence, and
+                    next-gen automation.</p>
+            </div>
+            <!-- Track 3 -->
+            <div class="glass-card track-card group">
+                <div class="track-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 leading-tight group-hover:text-brand-green transition-colors">
+                    Application Engineering</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Full-stack development, coding solutions,
+                    and software architecture.</p>
+            </div>
+            <!-- Track 4 -->
+            <div class="glass-card track-card group">
+                <div class="track-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 leading-tight group-hover:text-brand-green transition-colors">Digital
+                    Infra &amp; Security</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Network systems, cybersecurity, and
+                    protecting digital environments.</p>
+            </div>
+            <!-- Row 2 (3 items) -->
+            <!-- Track 5 -->
+            <div class="glass-card track-card group">
+                <div class="track-icon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 leading-tight group-hover:text-brand-green transition-colors">UI/UX
+                    Design</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">User interface design, empathy-driven
+                    experience, and visual creativity.</p>
+            </div>
+            <!-- Track 6 -->
+            <div class="glass-card track-card group">
+                <div class="track-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 leading-tight group-hover:text-brand-green transition-colors">
+                    Intelligent QA &amp; Automation</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Systematic testing, quality engineering, and
+                    process validation.</p>
+            </div>
+            <!-- Track 7 -->
+            <div class="glass-card track-card group">
+                <div class="track-icon">
+                    <i class="fa-solid fa-people-roof"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 leading-tight group-hover:text-brand-green transition-colors">Product
+                    Leadership</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Project management, product strategy, and
+                    decision-making leadership.</p>
+            </div>
+        </div>
+        <!-- Page Number -->
+        <div class="absolute bottom-6 right-8 text-gray-700 text-sm font-mono">10</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>How WeLe Guides Students</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f1712;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-green {
+            color: #00bf53;
+        }
+
+        .bg-brand-green {
+            background-color: #00bf53;
+        }
+
+        .border-brand-green {
+            border-color: #00bf53;
+        }
+
+        .step-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .step-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(0, 191, 83, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .step-number {
+            font-size: 8rem;
+            font-weight: 800;
+            line-height: 1;
+            color: rgba(255, 255, 255, 0.03);
+            position: absolute;
+            right: -10px;
+            top: -20px;
+            z-index: 0;
+            transition: color 0.3s ease;
+        }
+
+        .step-card:hover .step-number {
+            color: rgba(0, 191, 83, 0.08);
+        }
+
+        .icon-wrapper {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .arrow-connector {
+            position: absolute;
+            top: 50%;
+            right: -30px;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 1.5rem;
+            z-index: 20;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container px-16 py-12">
+        <!-- Background decoration -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-green-900 opacity-5 transform skew-x-12 origin-top-right">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-1/3 h-full bg-green-900 opacity-5 transform -skew-x-12 origin-bottom-left">
+        </div>
+        <!-- Header Section -->
+        <div class="text-center mb-12 relative z-10">
+            <div
+                class="inline-flex items-center justify-center space-x-3 mb-4 bg-gray-900 bg-opacity-50 px-4 py-2 rounded-full border border-gray-800">
+                <div class="w-2 h-2 rounded-full bg-brand-green"></div>
+                <span class="text-brand-green font-bold tracking-widest uppercase text-xs">The Process</span>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-6">
+                How <span class="brand-green">WeLe</span> Guides Students
+            </h1>
+            <p class="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+                Using advanced assessments, psychometric tools, and AI-enabled mapping, we transform confusion into a
+                clear path forward.
+            </p>
+        </div>
+        <!-- Three Columns Content -->
+        <div class="flex-1 grid grid-cols-3 gap-8 relative z-10 px-4">
+            <!-- Step 1: Assessments -->
+            <div class="step-card rounded-2xl p-8 relative flex flex-col h-full group">
+                <span class="step-number">01</span>
+                <!-- Icon -->
+                <div
+                    class="icon-wrapper bg-gray-800 border border-gray-700 text-brand-green shadow-lg group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+                    <i class="fa-solid fa-clipboard-question"></i>
+                </div>
+                <!-- Content -->
+                <div class="relative z-10 flex-1">
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-brand-green transition-colors">
+                        Assessments &amp; Tools</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                        Students engage with scientifically designed psychometric tests that go beyond standard aptitude
+                        checks to reveal deeper behavioral traits.
+                    </p>
+                    <ul class="space-y-2 mt-auto">
+                        <li class="flex items-center text-gray-500 text-xs">
+                            <i class="fa-solid fa-check text-brand-green mr-2"></i> Psychometric Analysis
+                        </li>
+                        <li class="flex items-center text-gray-500 text-xs">
+                            <i class="fa-solid fa-check text-brand-green mr-2"></i> Cognitive Evaluation
+                        </li>
+                    </ul>
+                </div>
+                <!-- Connector Arrow (Visible only on first two cards) -->
+                <div class="arrow-connector hidden lg:block">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <!-- Step 2: AI Mapping -->
+            <div class="step-card rounded-2xl p-8 relative flex flex-col h-full group">
+                <span class="step-number">02</span>
+                <!-- Icon -->
+                <div
+                    class="icon-wrapper bg-gray-800 border border-gray-700 text-blue-400 shadow-lg group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <!-- Content -->
+                <div class="relative z-10 flex-1">
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">
+                        AI-Enabled Mapping</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                        Our AI engine analyzes thousands of data points to map the student's unique profile against
+                        successful career trajectories in technology.
+                    </p>
+                    <ul class="space-y-2 mt-auto">
+                        <li class="flex items-center text-gray-500 text-xs">
+                            <i class="fa-solid fa-check text-blue-400 mr-2"></i> Pattern Recognition
+                        </li>
+                        <li class="flex items-center text-gray-500 text-xs">
+                            <i class="fa-solid fa-check text-blue-400 mr-2"></i> Domain Matching
+                        </li>
+                    </ul>
+                </div>
+                <!-- Connector Arrow -->
+                <div class="arrow-connector hidden lg:block">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <!-- Step 3: Strategic Guidance -->
+            <div class="step-card rounded-2xl p-8 relative flex flex-col h-full group">
+                <span class="step-number">03</span>
+                <!-- Icon -->
+                <div
+                    class="icon-wrapper bg-gray-800 border border-gray-700 text-yellow-400 shadow-lg group-hover:bg-yellow-500 group-hover:text-white transition-colors duration-300">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <!-- Content -->
+                <div class="relative z-10 flex-1">
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
+                        Strategic Guidance</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                        The final output isn't just a suggestion—it's a guided pathway to the specific domain where the
+                        student will naturally excel and thrive.
+                    </p>
+                    <ul class="space-y-2 mt-auto">
+                        <li class="flex items-center text-gray-500 text-xs">
+                            <i class="fa-solid fa-check text-yellow-400 mr-2"></i> Personalized Roadmap
+                        </li>
+                        <li class="flex items-center text-gray-500 text-xs">
+                            <i class="fa-solid fa-check text-yellow-400 mr-2"></i> Confidence Building
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Branding Strip -->
+        <div
+            class="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-brand-green via-blue-500 to-brand-green opacity-30">
+        </div>
+    </div>
+</body>
+
+</html>
